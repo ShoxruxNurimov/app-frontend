@@ -1,0 +1,14 @@
+@import '../../../styles/utils.scss';
+
+.header{ 
+    background-color: material-color('cyan', '600');
+    height: 3.5rem;
+    .responsive{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        @include responsive();
+    }
+}
