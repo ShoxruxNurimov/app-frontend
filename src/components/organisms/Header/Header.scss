@@ -1,0 +1,22 @@
+@import '../../../styles/utils.scss';
+
+.header{
+    background: material-color('cyan','600');
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    .responsive{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        @include responsive();
+    }
+    .right-side{
+        color: white;
+        display: flex;
+        margin-left: auto;
+    }
+    // @include responsiveMenu();
+}

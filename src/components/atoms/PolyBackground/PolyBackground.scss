@@ -1,0 +1,40 @@
+.poly-background{
+  background: #232526; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #414345, #232526); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width : 100%;
+  height : 100vh;
+ 
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  .image{
+    // background : url(./images/polybackground.png);
+    background-size: cover;
+    background-position : center;
+    transition: all 1s ease-in;
+    width : 100%;
+    height : 100%;
+    opacity : 1;
+
+    #tsparticles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .blur {
+    opacity : 0;
+    }
+    .inner{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 18.5rem;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      color: white;
+      font-size: 4rem;
+    }
+  }
+  
+} 

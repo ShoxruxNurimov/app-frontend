@@ -1,0 +1,17 @@
+@import '../../../styles/utils.scss';
+
+.block{
+    // background: white;
+    h1{
+        color: white;
+    }
+    padding: 1rem;
+    font-family: 'Goldman', cursive;
+    letter-spacing: 3px;
+    &.center{
+        text-align: center;
+    }
+    // &.shadow{
+    //     @include material-shadow(3);
+    // }
+}

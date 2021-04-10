@@ -1,0 +1,32 @@
+@import '../../../styles//utils.scss';
+
+.button{
+    background:material-color('orange', '600');
+    padding: .4rem .8rem;
+    color:whitesmoke;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 2px;
+    user-select: none;
+    @include material-shadow(5);
+    cursor: pointer;
+    &:hover{
+        background:material-color('orange', '300');
+    }
+    &:active{
+        background:material-color('orange', '500');
+    }
+    &.round{
+        border-radius: 5px;
+    }
+    &.invert{
+        background-color: transparent;
+        transition: all .3s linear;
+        border: 1px solid material-color('orange', '600');
+        &:hover{
+            background-color: material-color('orange', '300');
+            color:material-color('grey', '900') ;
+        }
+    }
+   
+}
