@@ -6,7 +6,7 @@ const HomePage = () =>{
     return(
         <PageTemplate 
             header={<Header/>}
-            responsive
+            // responsive
         >
             <PolyBackground>
                 <Block center shadow>
